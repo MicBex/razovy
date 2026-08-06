@@ -1,110 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Razovy | Anime, Linux, Manga & Japan Culture</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>AniStream • Official HD Anime Streaming 2026</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        anime: {
+                            dark: '#0B0F19',
+                            card: '#131C2E',
+                            accent: '#F43F5E', // Vibrant Rose/Pink for anime vibe
+                            purple: '#8B5CF6',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="bg-anime-dark text-white font-sans antialiased selection:bg-anime-accent selection:text-white">
 
-    <!-- Header / Navigation -->
-    <header class="site-header">
-        <div class="container header-flex">
-            <a href="#" class="logo">Razovy<span>.xyz</span></a>
-            <nav class="main-nav">
-                <a href="#">Anime</a>
-                <a href="#">Manga</a>
-                <a href="#">Linux</a>
-                <a href="#">Japan Travel</a>
-                <a href="#">Games</a>
-            </nav>
-            <a href="https://www.youtube.com/@RazovyRevived" class="btn btn-youtube" target="_blank">📺 YouTube</a>
-            <button class="mobile-menu-toggle" id="menuToggle">☰</button>
-        </div>
-    </header>
-
-    <!-- Main Content Area -->
-    <div class="container layout-grid">
-        
-        <!-- Left Column: Blog Content -->
-        <main class="main-content">
-            
-            <!-- Hero Featured Post -->
-            <article class="hero-post">
-                <div class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1580136579312-94651dfd596d?auto=format&fit=crop&w=1000&q=80');"></div>
-                <div class="hero-content">
-                    <span class="category-tag">Japan Travel</span>
-                    <h2>Is the JR Pass Still Worth It in 2024? A Complete Guide</h2>
-                    <p>Everything you need to know about navigating Japan's rail network efficiently...</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
-                </div>
-            </article>
-
-            <!-- AdSense / Horizontal Banner Placeholder -->
-            <div class="ad-horizontal">
-                <span>[ Google AdSense / Sponsorship Banner (728x90) ]</span>
-            </div>
-
-            <!-- Blog Post Grid -->
-            <div class="post-grid">
-                <!-- Post 1 -->
-                <article class="post-card">
-                    <div class="post-img" style="background: #334155;"></div>
-                    <div class="post-info">
-                        <h3>Top 10 Hidden Gem Manga on J-List</h3>
-                        <p>Looking for something new? Check out these amazing titles...</p>
-                    </div>
-                </article>
-                <!-- Post 2 -->
-                <article class="post-card">
-                    <div class="post-img" style="background: #334155;"></div>
-                    <div class="post-info">
-                        <h3><a href="https://www.hrkgame.com?a_aid=Razovy" target="_blank" style="color: inherit; text-decoration: none;">Best Steam Anime Games on HRKGame</a></h3>
-                        <p>Save up to 80% on these incredible visual novels and RPGs.</p>
-                    </div>
-                </article>
-            </div>
-        </main>
-
-        <!-- Right Column: Sidebar (Monetization Hub) -->
-        <aside class="sidebar">
-            
-            <!-- Ad Placeholder -->
-            <div class="widget ad-sidebar">
-                <span>[ AdSense 300x250 ]</span>
-            </div>
-
-            <!-- Affiliate Widget 1 -->
-            <div class="widget affiliate-widget">
-                <h3>🚄 Going to Japan?</h3>
-                <p>Book your essentials before you land.</p>
-                <a href="https://click.jrpass.com/aff_c?offer_id=19&aff_id=2410" class="btn btn-affiliate" target="_blank">Buy JR Pass</a>
-                <a href="https://gyg.me/1kNjVwTJ" class="btn btn-affiliate-alt" target="_blank">Tours on GetYourGuide</a>
-                <a href="https://billing.purevpn.com/aff.php?aff=46961" class="btn btn-affiliate-alt" target="_blank">PureVPN for Safe WiFi</a>
-            </div>
-
-            <!-- Affiliate Widget 2 -->
-            <div class="widget affiliate-widget merch-widget">
-                <h3>🛍️ Otaku Essentials</h3>
-                <ul class="affiliate-list">
-                    <li><a href="https://www.play-asia.com/en/?tagid=4449715" target="_blank">Play-Asia Import Games</a></li>
-                    <li><a href="https://a.jlist.com/moe.php?id=2282&url=5137" target="_blank">J-List Exclusive Merch</a></li>
-                    <li><a href="https://amzn.to/3RTAQan" target="_blank">Amazon Anime Deals</a></li>
-                </ul>
-            </div>
-        </aside>
+    <!-- Top Announcement Banner -->
+    <div class="bg-gradient-to-r from-anime-accent to-anime-purple text-xs sm:text-sm font-semibold text-center py-2 px-4 shadow-md">
+        ✨ 2026 OFFICIAL RELEASE • 1.4M+ STREAMERS • 100% FREE & LEGAL HD ANIME
     </div>
 
+    <!-- Header / Navigation -->
+    <header class="max-w-6xl mx-auto px-4 py-6 flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+            <div class="bg-gradient-to-tr from-anime-accent to-anime-purple p-2.5 rounded-xl shadow-lg shadow-anime-accent/20">
+                <i class="fa-solid fa-play text-xl text-white"></i>
+            </div>
+            <span class="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
+                Ani<span class="text-anime-accent">Stream</span>
+            </span>
+        </div>
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
+            <a href="#features" class="hover:text-white transition">Features</a>
+            <a href="#how-it-works" class="hover:text-white transition">How It Works</a>
+            <a href="#safety" class="hover:text-white transition">Safety & Legal</a>
+        </nav>
+        <a href="#download" class="bg-anime-accent hover:bg-anime-accent/90 text-white text-sm font-bold px-5 py-2.5 rounded-xl transition shadow-lg shadow-anime-accent/30">
+            Watch Now
+        </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-5xl mx-auto px-4 pt-12 pb-20 text-center">
+        <div class="inline-flex items-center space-x-2 bg-anime-card border border-gray-800 px-4 py-1.5 rounded-full text-xs font-medium text-gray-300 mb-6 shadow-inner">
+            <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>Server Status: Online & Ultra-Fast</span>
+        </div>
+        
+        <h1 class="text-4xl sm:text-6xl font-black tracking-tight leading-tight max-w-3xl mx-auto mb-6">
+            STREAM YOUR FAVORITE <span class="bg-gradient-to-r from-anime-accent to-anime-purple bg-clip-text text-transparent">ANIME IN 4K</span> WITHOUT ADS
+        </h1>
+        
+        <p class="text-gray-400 text-lg sm:text-xl max-w-2xl mx-auto mb-10">
+            The ultimate legal web platform for anime lovers. Zero pop-ups, instant streaming, and crystal-clear subtitles for iOS, Android, PC, and Smart TV.
+        </p>
+
+        <!-- Download / Launch CTA buttons -->
+        <div id="download" class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto mb-12">
+            <a href="#" class="w-full sm:w-auto flex items-center justify-center space-x-3 bg-anime-card hover:bg-gray-800 border border-gray-700/80 px-8 py-4 rounded-2xl transition shadow-xl group">
+                <i class="fa-brands fa-apple text-2xl text-gray-300 group-hover:text-white"></i>
+                <div class="text-left">
+                    <div class="text-[10px] uppercase tracking-wider text-gray-400">Instant Access</div>
+                    <div class="text-base font-bold text-white">iOS Web App</div>
+                </div>
+            </a>
+            <a href="#" class="w-full sm:w-auto flex items-center justify-center space-x-3 bg-gradient-to-r from-anime-accent to-anime-purple hover:opacity-95 px-8 py-4 rounded-2xl transition shadow-xl shadow-anime-accent/25 group">
+                <i class="fa-solid fa-bolt text-2xl text-white"></i>
+                <div class="text-left">
+                    <div class="text-[10px] uppercase tracking-wider text-white/80">Android & PC</div>
+                    <div class="text-base font-bold text-white">Launch Player</div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="grid grid-cols-3 gap-4 max-w-lg mx-auto pt-8 border-t border-gray-800/80 text-center">
+            <div>
+                <div class="text-xl sm:text-2xl font-black text-white">100%</div>
+                <div class="text-xs text-gray-400 mt-0.5">Ad-Free Experience</div>
+            </div>
+            <div>
+                <div class="text-xl sm:text-2xl font-black text-white">0/72</div>
+                <div class="text-xs text-gray-400 mt-0.5">Malware Scan Score</div>
+            </div>
+            <div>
+                <div class="text-xl sm:text-2xl font-black text-white">4.9/5</div>
+                <div class="text-xs text-gray-400 mt-0.5">Viewer Rating</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="bg-anime-card/50 border-y border-gray-800/60 py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <h2 class="text-2xl sm:text-3xl font-extrabold mb-3">Why Otakus Choose AniStream</h2>
+                <p class="text-gray-400 text-sm">Built by anime fans, for anime fans. Experience seamless streaming without annoying roadblocks.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-anime-card p-8 rounded-3xl border border-gray-800 relative group hover:border-anime-accent/50 transition">
+                    <div class="w-12 h-12 bg-anime-accent/10 rounded-2xl flex items-center justify-center text-anime-accent mb-6 text-xl">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Zero Invasive Ads</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">No sketchy redirects, no pop-up casinos, and no disruptive banners breaking your emotional anime scenes.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-anime-card p-8 rounded-3xl border border-gray-800 relative group hover:border-anime-accent/50 transition">
+                    <div class="w-12 h-12 bg-anime-purple/10 rounded-2xl flex items-center justify-center text-anime-purple mb-6 text-xl">
+                        <i class="fa-solid fa-tv"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Ultra HD & Fast Buffering</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Stream up to 4K resolution with multi-CDN cloud routing ensuring lag-free playback anywhere in the world.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-anime-card p-8 rounded-3xl border border-gray-800 relative group hover:border-anime-accent/50 transition">
+                    <div class="w-12 h-12 bg-emerald-500/10 rounded-2xl flex items-center justify-center text-emerald-400 mb-6 text-xl">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">PWA Ready (No App Store)</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Add it straight to your phone's home screen as a progressive web app in under 10 seconds.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="max-w-5xl mx-auto px-4 py-20">
+        <div class="text-center max-w-xl mx-auto mb-16">
+            <h2 class="text-2xl sm:text-3xl font-extrabold mb-3">3 Steps to Watch</h2>
+            <p class="text-gray-400 text-sm">Getting started takes less time than making a cup of instant ramen.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center p-6">
+                <div class="w-14 h-14 bg-anime-card border border-gray-700 text-anime-accent rounded-2xl flex items-center justify-center text-xl font-black mx-auto mb-6 shadow-md">1</div>
+                <h3 class="font-bold text-base mb-2">Open Platform</h3>
+                <p class="text-gray-400 text-xs leading-relaxed">Tap the launch button on your mobile phone, tablet, or PC browser.</p>
+            </div>
+            <div class="text-center p-6">
+                <div class="w-14 h-14 bg-anime-card border border-gray-700 text-anime-purple rounded-2xl flex items-center justify-center text-xl font-black mx-auto mb-6 shadow-md">2</div>
+                <h3 class="font-bold text-base mb-2">Pin to Home Screen</h3>
+                <p class="text-gray-400 text-xs leading-relaxed">Tap your browser menu and choose “Add to Home Screen” for app-like performance.</p>
+            </div>
+            <div class="text-center p-6">
+                <div class="w-14 h-14 bg-anime-card border border-gray-700 text-emerald-400 rounded-2xl flex items-center justify-center text-xl font-black mx-auto mb-6 shadow-md">3</div>
+                <h3 class="font-bold text-base mb-2">Pick Your Show</h3>
+                <p class="text-gray-400 text-xs leading-relaxed">Search thousands of simulcasts, classics, and movies with instant playback.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <p><strong>Affiliate Disclaimer:</strong> Razovy.xyz participates in affiliate programs including Amazon Associates, Play-Asia, J-List, and others. If you purchase through our links, we may earn a commission at no extra cost to you.</p>
-            <p>&copy; 2024 Razovy.xyz. All rights reserved.</p>
+    <footer class="border-t border-gray-800/80 bg-anime-card/20 text-xs text-gray-500 py-12">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <div>
+                <p class="font-semibold text-gray-400">© 2026 AniStream. Built for the community.</p>
+                <p class="mt-1">All rights belong to respective studios. Content distributed under legal fair use & syndication protocols.</p>
+            </div>
+            <div class="flex space-x-6 text-gray-400">
+                <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition">Terms of Service</a>
+                <a href="#" class="hover:text-white transition">Contact Support</a>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
