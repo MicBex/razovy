@@ -78,9 +78,9 @@ h2 { font-size: clamp(2.3rem, 4.2vw, 4.6rem); line-height: .98; margin-bottom: 1
 .terminal-bar, .terminal-footer { display: flex; justify-content: space-between; gap: 20px; padding: 9px 12px; font-family: 'Courier New', monospace; font-weight: 700; font-size: .7rem; letter-spacing: .06em; }
 .terminal-bar { border-bottom: 1px solid rgba(255,255,255,.3); }
 .terminal-footer { border-top: 1px solid rgba(255,255,255,.3); }
-.logo-stage { background: var(--white); padding: 42px; aspect-ratio: 1 / .78; display: grid; place-items: center; position: relative; overflow: hidden; }
+.logo-stage { background: var(--white); padding: 34px 28px; aspect-ratio: 1 / .78; display: grid; place-items: center; position: relative; overflow: hidden; }
 .logo-stage::after { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(to bottom, rgba(16,47,77,.06) 0, rgba(16,47,77,.06) 1px, transparent 1px, transparent 4px); pointer-events: none; }
-.logo-stage img { width: min(100%, 420px); mix-blend-mode: multiply; }
+.logo-stage img { width: 94%; height: auto; max-height: 100%; object-fit: contain; object-position: center; mix-blend-mode: multiply; }
 
 .ticker { overflow: hidden; background: var(--ink); color: var(--white); border-block: 2px solid var(--ink); }
 .ticker-track { width: max-content; display: flex; align-items: center; gap: 42px; padding: 11px 0; animation: ticker 28s linear infinite; font-family: 'Courier New', monospace; font-size: .78rem; font-weight: 800; letter-spacing: .08em; }
@@ -184,4 +184,3 @@ h2 { font-size: clamp(2.3rem, 4.2vw, 4.6rem); line-height: .98; margin-bottom: 1
   .ticker-track { animation: none; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
-
